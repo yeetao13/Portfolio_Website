@@ -1,0 +1,81 @@
+.skills-container{
+    background: url(image/skills-back.jpg);
+    background-size: cover;
+    padding-bottom: 150px;
+    opacity: 0.9;
+    font-weight: bold;
+    z-index: -1;
+
+}
+
+.skills-headings{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 70px 0 30px 30px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px; 
+    padding-top: 50px;
+    padding-bottom: 50px;  
+    margin-left: 35px;
+    margin-right: 35px;
+    opacity: 0.8;
+}
+
+.div{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(210, 209, 209);
+    border-radius: 30px;
+    transition: transform .4s; /* Animation */
+}
+
+.div:hover{
+    background-color: rgb(178, 173, 173);
+    transform: scale(1.07); /* (107% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.icon{
+    display: flex;
+    height: 50px;
+}
+
+.icon img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info{
+    text-align: justify;
+    vertical-align: top;
+}
+
+.title{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.description{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    .skills-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+}
+

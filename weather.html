@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="css/weather.css">
+    </head>
+<body>
+    <div class="container">
+        <h1 class="banner">Weather App</h1>
+        <div class="'form-group'">
+            <input id="city-input" type="text" placeholder="Search city">
+        </div>
+        <button type="button" onclick="searchCity()" class="btn">Search</button>
+        <div class="weather-output">
+            <div class="card-header">
+               <h4 id="city-name">----</h4>
+            </div>
+            <div class="card-body">
+                <h1 id="weather-type" class="card-title">----</h1>
+                <ul>
+                    <li>Temp: <span id="temp">--</span>°C</li>
+                    <li>Min Temp: <span id="min-temp">--</span>°C</li>
+                    <li>Max Temp: <span id="max-temp">--</span>°C</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/weather.js"></script>
+</body>
+</html>
